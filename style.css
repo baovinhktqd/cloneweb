@@ -50,6 +50,9 @@ text-decoration: none;
 /* =============== HEADER ================ */
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 .header .nav {
   width: 100%;
@@ -58,7 +61,7 @@ text-decoration: none;
   color: white;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+
 }
 .header .nav .menu {
   margin: 0;
@@ -96,6 +99,9 @@ text-decoration: none;
 
 
 /* =============== MAIN ================ */
+.main {
+  margin-top: 42px;
+}
 
 /* ----- BANNER ----  */
 .banner {
@@ -210,7 +216,7 @@ text-decoration: none;
 }
 
 .place:not(:last-child) {
-  padding-right: 16px;
+  margin-right: 16px;
 }
 .place .place-content{
   background-color: white;
@@ -218,6 +224,7 @@ text-decoration: none;
 }
 .place .place-img{
   width: 100%;
+  height: auto;
   vertical-align: middle;
   display: block;
   transition: all .8s;
@@ -323,6 +330,119 @@ color: #000000;
 padding: 8px;
 width: 100%;
 }
+/* -------------------- IMG ----------- */
 .map .map1{
   width: 100%;
+  height: auto;
 }
+
+/* --------footer----------- */
+.footer{
+  text-align: center;
+
+}
+
+.footer .social-list{
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer .social-list .social-item:not(:last-child){
+  margin: 0 4px 0 0;
+}
+.footer .social-list .social-item:hover{
+  opacity: 0.6;
+}
+
+.footer .container .social-list .social-item > *{
+  font-size: 24px;
+  color: #666666;
+}
+.footer .end{
+  margin-top: 18px;
+  color: #666666;
+  font-size: 15px;
+  
+}
+.footer .link-end {
+  text-decoration: underline;
+  color: #666666;
+  
+}
+
+/* ============= RESPONSIVE ============= */
+
+
+@media screen and (max-width : 768px) {
+
+  .subcribe .form .form-group {
+    margin: 0 0 9px 0;
+  }
+
+}
+
+@media screen and (max-width : 490px) {
+
+  .banner .banner-content {
+    display: none;
+  }
+  .band .pic .list{
+    flex-direction: column;
+  }
+  .tourdate .location{
+    flex-direction: column;
+  }
+
+  .place:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+  .contact .infomation {
+    flex-direction: column;
+  }
+  .contact .infomation .infor-list{
+    margin-bottom: 20px;
+  }
+ 
+  .subcribe .form .btn .form-btn{
+    width: 100%;
+    
+  }
+
+}
+
+.header .menu-hamburger {
+  display: none;
+}
+
+/* --------- responsive navigation menu -------  */
+@media screen and (max-width : 550px) {
+  .header {
+    background-color: #000;
+  }
+  .header .nav{
+    flex-flow: column wrap;
+    align-items: flex-start;
+    display: none;
+  }
+  .header .nav.active{
+    display: block;
+  }
+  .header .menu {
+    flex-direction: column; 
+  }
+  /* ---menu humberger ---  */
+  .header .menu-hamburger {
+    display: block;
+  }
+  .header .menu-hamburger {
+    display: block;
+    text-align: right;
+    padding: 5px;
+  }
+  .header .menu-hamburger .hamburger{
+    font-size: 30px;
+    color: #fff;
+  }
+
+} 
