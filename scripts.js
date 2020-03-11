@@ -5,4 +5,6 @@ const hamburger = document.querySelector('.header .menu-hamburger');
 
 hamburger.addEventListener('click', function() {
    nav.classList.toggle("active");
-}) 
+});
+
+console.log('123');
