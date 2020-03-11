@@ -1,0 +1,328 @@
+/* font-family: 'Lato', sans-serif; */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul li {
+   list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+/* =======COMMON ============ */
+
+.heading-2{
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+}
+
+.para-small{
+  font-style: italic;
+  opacity: 0.6;
+
+}
+.heading-3 {
+    color: white;
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.p-6416{
+  padding: 64px 16px;
+}
+
+.mg-bot-40  {
+  margin-bottom: 40px;
+}
+/* =============== HEADER ================ */
+.header {
+  width: 100%;
+}
+.header .nav {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+.header .nav .menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header .nav .menu .item {
+  list-style: none;
+}
+.header .nav .menu .item .link {
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .9s ease;
+}
+.header .nav .menu .item .link:hover{
+    background-color: white;
+    color: black;
+}
+
+.header .nav .search .search-icon {
+    display: block;
+    color:white;
+    padding: 12px 24px;
+    font-size: 18px;
+    transition: all .8s ease;
+}
+.header .nav .search .search-icon:hover{
+    background-color: #f44336;
+}
+
+
+
+/* =============== MAIN ================ */
+
+/* ----- BANNER ----  */
+.banner {
+    position: relative;
+}
+.banner .banner-img {
+    width: 100%;
+    height: auto;
+    /* background-image: linear-gradient(to right, rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.9));; */
+}
+.banner .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.banner .banner-content .heading-3 {
+    margin: 10px;
+
+}
+
+.banner .banner-content .title {
+    font-weight: bold;
+    
+ } 
+ /* -------------the band----------------- */
+ 
+
+.band  .heading-2{}
+.band  .para-small{}
+
+.band .para-big{
+  margin: 15px;
+  text-align: justify;
+}
+.band .pic{
+  padding: 32px 0;
+}
+
+.band .pic .list{
+  display: flex;
+}
+
+.customer{
+}
+.customer-name{
+  margin: 15px;
+}
+.customer-img{
+  width: 60%;
+
+}
+/* -------------------tour date------------
+
+  */
+
+  .tourdate{
+    background-color: black;
+    overflow: hidden;
+  }
+
+.tourdate  .heading-2,
+.tourdate  .para-small{
+  color: #fff;
+}
+.tourdate .list {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  text-align: left;
+  
+}
+.tourdate .list .list-item{
+  padding: 8px 16px;
+}
+.soldout{
+  padding: 0 8px;
+  margin: 0 0 0 16px;
+  background-color: red;
+  color: #fff;
+}
+.number{
+  border-radius: 50%;
+  padding: 0px 8px;
+  background-color: black;
+  color: #fff;
+  
+}
+
+
+.tourdate .list .list-item:not(:last-child){
+  border-bottom: 1px solid #dddddd;
+}
+.tourdate .list .list-item:last-child{
+  display: flex;
+  justify-content: space-between;
+}
+.tourdate .location {
+  display: flex;
+}
+
+.location{
+
+  padding: 32px 0px;
+}
+
+.place{
+  text-align: left;
+}
+
+.place:not(:last-child) {
+  padding-right: 16px;
+}
+.place .place-content{
+  background-color: white;
+
+}
+.place .place-img{
+  width: 100%;
+  vertical-align: middle;
+  display: block;
+  transition: all .8s;
+}
+.place .place-img:hover{
+  opacity: 60%;
+  
+}
+.place .place-content{
+  padding: 15px;
+}
+.place .place-content .detail{
+  margin: 0 0 15px 0;
+}
+.place .place-content .place-bold{
+  font-weight: bold;
+  
+}
+.place .place-content .place-date{
+  opacity: 80%;
+}
+.place .place-content .link{
+  display: inline-block;
+  color: #fff;
+  background-color: black;
+  padding: 8px 16px;
+  margin: 0 0 16px;
+
+}
+.section{
+
+}
+.contact-1{
+
+  margin:0 0 45px 0;
+}
+.contact-1 .contact-title{
+  font-weight: bold;
+
+}
+.contact-1 .contact-title1{}
+
+
+.contact .infomation {
+  display: flex;
+}
+
+.contact .infomation .infor-list,
+.contact .infomation .subcribe {
+  flex: 1;
+}
+.contact .infomation .infor-list{
+font-weight: 400;
+} 
+
+.contact .infomation .infor-list .infor-item {
+  display: flex;
+  align-items: center;
+}
+.contact .infomation .infor-list .infor-item ion-icon[name] {
+    margin: 0 17px 0 0;
+   font-size: 20px;
+}
+
+.contact .infomation .infor-list .infor-item > * {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.contact .infomation .infor-list .infor-item:not(:last-child){
+  margin: 0 0 16px 0;  
+} 
+
+.subcribe .form  {
+
+}
+.subcribe .form .form-group  {
+display: flex;
+margin: 0 0 7px 0;
+}
+.subcribe .form .form-input:nth-of-type(2) {
+  margin-left: 16px;
+}
+.subcribe .form .btn{
+  text-align: right;
+  
+
+}
+.subcribe .form .btn .form-btn {
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 16px 0;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+.subcribe .form .btn .form-btn:hover{
+background-color: #dddddd;
+color: #000000;
+}
+
+.subcribe .form .form-input {
+padding: 8px;
+width: 100%;
+}
+.map .map1{
+  width: 100%;
+}
